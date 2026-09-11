@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "updated_at": "2026-09-09T03:02:14-03:00",
+  "teams": [
+    {
+      "name": "Team 1",
+      "duration": 20,
+      "status": "Not started",
+      "characters": [],
+      "actions": [
+        "YangYang Intro Skill",
+        "YangYang Basic Attack 1",
+        "YangYang Basic Attack 2",
+        "YangYang Heavy Attack",
+        "YangYang Resonance Skill",
+        "YangYang Outro Skill",
+        "suisui Intro Skill",
+        "suisui Resonance Skill",
+        "suisui Resonance Liberation",
+        "suisui Heavy Attack",
+        "suisui Basic Attack"
+      ]
+    }
+  ],
+  "rotations": [],
+  "comparisons": []
+}
