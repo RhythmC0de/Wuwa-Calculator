@@ -1,5 +1,7 @@
 """ Weapons database. """
 
+# * EDITAVEL: adicione o nome da arma no mapa do personagem e o texto em MANUAL_WEAPONS.
+
 _LOCAL_KIT_WEAPON_NAMES = {
     "xuanling": "Azure Oath", "lucy": "Spectral Trigger", "rebecca": "Skull Thrasher",
     "hiyuki": "Frostburn", "sigrika": "Solsworn Ciphers", "aemeath": "Everbright Polestar",

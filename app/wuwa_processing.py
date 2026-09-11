@@ -4,6 +4,9 @@ This module intentionally contains only calculation processing code.
 It is reloaded by the desktop application when the processing logic changes.
 """
 
+# ! Keep this module independent from Qt, network requests and UI widgets.
+# * EDITAVEL: altere formulas aqui e valide os resultados antes de ligar a interface.
+
 from __future__ import annotations
 
 from dataclasses import dataclass

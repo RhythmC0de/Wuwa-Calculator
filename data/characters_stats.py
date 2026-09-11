@@ -1,4 +1,5 @@
 """ Character stats database. """
+# * EDITAVEL: adicione os seis atributos usando exatamente o mesmo ID do catalogo principal.
 
 CHARACTER_STATS_DB: dict[str, dict[str, str]] = {
     "lucilla": {

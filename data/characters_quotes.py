@@ -1,5 +1,7 @@
 """Verified character quotes used by the Tethys character banner."""
 
+# * EDITAVEL: adicione uma tupla de frases para o mesmo ID usado nos catalogos de personagens.
+
 import sys
 from pathlib import Path
 

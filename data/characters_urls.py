@@ -1,5 +1,8 @@
 """ character URLs for scraping. """
 
+# * EDITAVEL: adicione o slug remoto somente quando a fonte de dados for necessaria.
+# ! Slug remoto nao substitui o ID interno usado pelos outros catalogos.
+
 RACKOON_CHARACTER_SLUGS = {
     "qingxiao": "qingxiao", "rover (electro)": "rover-electro", "yangyang: xuanling": "yangyang-xuanling",
     "suisui": "suisui", "rebecca": "rebecca", "lucilla": "lucilla", "lucy": "lucy", "denia": "denia",

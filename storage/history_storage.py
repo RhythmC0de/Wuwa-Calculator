@@ -1,5 +1,8 @@
 """Local rotation-history storage without UI or network dependencies."""
 
+# * EDITAVEL: altere o formato do historico junto com app/history_tab.py.
+# ! Valide JSON importado antes de usa-lo na interface.
+
 from __future__ import annotations
 
 import json

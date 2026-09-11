@@ -1,5 +1,8 @@
 """Character kits database."""
 
+# * EDITAVEL: cada chave recebe skills, buffs e marcadores exibidos na tela.
+# ? Se um kit nao existir, a interface usa o fallback manual quando disponivel.
+
 # Manual kit overrides. Add or edit one entry per normalized character ID.
 # Keep each skill in this shape: name, icon (URL or local path), description.
 

@@ -3,7 +3,7 @@
 from pathlib import Path
 from urllib.parse import urlparse
 
-# Only reviewed image hosts used by the local character/weapon catalog are allowed.
+# ! Only reviewed image hosts used by the local character/weapon catalog are allowed.
 # Responses are still accepted as pixels only; they are never executed as code.
 ALLOWED_REMOTE_HOSTS: frozenset[str] = frozenset({
     "rackoon.com.br",

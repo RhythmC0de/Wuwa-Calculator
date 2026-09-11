@@ -2,6 +2,8 @@
 
 from data.characters_ids import KNOWN_CHARACTER_IDS
 
+# * EDITAVEL: adicione "id": "Elemento" para colorir card, badge e glow do personagem.
+# ! REMOVER: remova o registro daqui quando o ID sair de characters_ids.py.
 CHARACTER_ELEMENTS: dict[str, str] = {
     "aalto": "Aero",
     "aemeath": "Fusion",

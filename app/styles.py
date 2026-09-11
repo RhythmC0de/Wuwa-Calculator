@@ -1,5 +1,8 @@
 """Global visual system for the PySide6 application."""
 
+# * EDITAVEL: altere cores globais e regras QSS aqui; o wallpaper gera uma paleta complementar.
+# ! Nao use #RRGGBBAA no QColor: _with_alpha produz o formato Qt #AARRGGBB.
+
 from PySide6.QtCore import QUrl
 from PySide6.QtGui import QColor, QImage
 from PySide6.QtWidgets import QGraphicsDropShadowEffect, QWidget

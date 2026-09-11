@@ -1,5 +1,8 @@
 """ Character image URLs database. """
 
+# * EDITAVEL: adicione "id": {"char": URL, "weapon": URL} para novas imagens.
+# ! Use somente URLs HTTPS permitidas pela politica em app/security_policy.py.
+
 # Diagnóstico: linhas 120-125 (rover:*), usam o mesmo URL Wikia e podem falhar
 # por certificado TLS expirado; as URLs foram preservadas intencionalmente.
 

@@ -1,5 +1,8 @@
 """Local team storage for the Tethys PySide6 application."""
 
+# * EDITAVEL: altere o formato dos registros junto com app/teams_tab.py.
+# ! Preserve compatibilidade ao mudar as chaves dos JSON salvos pelo usuario.
+
 from __future__ import annotations
 
 import json

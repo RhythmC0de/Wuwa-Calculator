@@ -77,6 +77,51 @@ Também é possível usar o script `iniciar.bat` ou executar a tarefa
 	- Clique em **Procurar vídeo** e selecione um arquivo de vídeo local.
 	- Use **Play**, **Stop**, a barra de progresso, o volume e as legendas.
 	- O nome do vídeo carregado aparece somente no título principal colorido.
+	- O nome do vídeo carregado aparece somente no título principal colorido.
+
+## Como editar os dados
+
+Os comentários marcados com `*`, `!` e `?` usam a extensão Better Comments do VS Code.
+Eles indicam, respectivamente, pontos editáveis, regras que não devem ser quebradas e
+decisões ou fallbacks importantes.
+
+### Adicionar um personagem
+
+Use o mesmo ID minúsculo em todos os catálogos necessários:
+
+```python
+# data/characters_ids.py
+KNOWN_CHARACTER_IDS = {"novo_personagem", ...}
+
+# data/characters_elements.py
+CHARACTER_ELEMENTS = {"novo_personagem": "Fusion", ...}
+
+# data/characters_stats.py
+CHARACTER_STATS_DB = {"novo_personagem": {"Base HP": "10,000", ...}}
+
+# data/characters_kits.py
+CHARACTER_KITS_DB = {"novo_personagem": {"skills": [], ...}}
+
+# data/images.py
+CHARACTER_IMAGE_FALLBACKS = {
+    "novo_personagem": {"char": "https://host-permitido/imagem.webp", "weapon": ""},
+}
+```
+
+O ID precisa existir em `characters_ids.py` e os dicionários devem usar exatamente a
+mesma chave. O arquivo `characters_elements.py` valida IDs desconhecidos ao importar.
+Para remover um personagem, remova o ID e os registros relacionados dos catálogos;
+depois execute uma validação Python antes de abrir o programa.
+
+### Adicionar ou remover elementos
+
+Os elementos aceitos ficam no `element_box` de `app/resonator_tab.py` e suas cores em
+`ELEMENT_GLOW_COLORS` e no QSS de `app/styles.py`. Ao adicionar um elemento, atualize
+esses três pontos e inclua o valor no mapa `CHARACTER_ELEMENTS`.
+
+```powershell
+python -m py_compile main.py app\main.py app\resonator_tab.py app\styles.py
+```
 
 ## Wallpaper
 

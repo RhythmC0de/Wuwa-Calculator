@@ -1,5 +1,8 @@
 """Native PySide6 Resonator detail screen backed by local character databases."""
 
+# * EDITAVEL: esta tela monta banner, atributos, arma, habilidades e calculo de dano.
+# ? O elemento vem de data/characters_elements.py e controla badge, card e glow.
+
 from __future__ import annotations
 
 import html
